@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    scroll-behavior: smooth;
+}
+nav {
+    background-color: rgb(255, 255, 255);
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 1em 2em;
+}
+nav .logo {
+    /* background-color: red; */
+    display: flex;
+    padding: 10px 10px 10px 50px;
+    cursor: pointer;
+}
+nav .logo img {
+   height: 7vh;
+}
+nav .logo span {
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+}
+nav .mainlink {
+    /* background-color: cadetblue; */
+    display: flex;
+    margin-right: 6em;
+}
+nav .mainlink ul 
+{
+    /* background-color: green; */
+    display: flex;
+}
+nav .mainlink li 
+{
+    /* background-color: red; */
+    padding: 10px 30px 0px 0px;
+    /* line-height: 40px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    display: flex;
+}
+nav .mainlink li a ion-icon 
+{
+    font-size: 20px;
+}
+nav .mainlink li a {
+    transition: 0.4s;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+nav .mainlink li:hover a {
+    color: rgb(255, 28, 28);
+}
+nav .mainlink li:hover ion-icon {
+    color: rgb(255, 28, 28);
+}
+/* nav .mainlink li:hover {
+    background-color: green;
+} */
+.different {
+    position: relative;
+}
+.different i {
+    margin-left: 20px;
+}
+.different .s-dropdown {
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    border-top: 2px solid rgb(29, 180, 29);
+    width: 200px;
+    display: none;
+    padding: 0;
+    box-shadow: 0px 2px 10px -6px rgb(194, 194, 194);
+}
+.different .s-dropdown button{
+    /* background-color: red; */
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    border: none;
+    background-color: #fff;
+}
+.different .s-dropdown button a {
+    transition: 0.4s;
+}
+.different .s-dropdown button:hover a{
+    color: green;
+}
+.different:hover .s-dropdown {
+    display: block;
+}
+.cart i{
+    font-size: 25px;
+    color: rgb(255, 28, 28);
+    transition: 0.4s;
+}
+.cart i:hover {
+    opacity: 0.3;
+}
+.resize-nav {
+    display: none;
+    padding: 10px;
+    transform: translateX(-100%);
+}
+.resize-nav ion-icon 
+{
+    font-size: 30px;
+}
+.second-nav {
+    /* display: none; */
+}
+
+#part1 {
+    width: 100%;
+    /* background-color: tomato; */
+    /* z-index: 100; */
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+#part1 img {
+    height: 40vw;
+}
+.head-text {
+    padding-left: 5em;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+.head-text p {
+    font-size: 20px;
+    opacity: .9;
+}
+.head-text label {
+    font-size: 4em;
+    line-height: 80px;
+    font-weight: 600;
+}
+.head-text button {
+    display: block;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: tomato;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 14px 16px;
+    width: 40%;
+    font-size: 20px;
+}
+.head-text button:hover {
+    background-color: rgb(230, 88, 63);
+    /* border-bottom: 2px solid green; */
+}
+
+#part2 {
+    /* background-color: #f1f1f1; */
+    padding: 10px;
+    display: flex;
+}
+.circle {
+    /* background-color:tomato; */
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+.circle ion-icon {
+    color: yellowgreen;
+    background-color: #f1f1f1;
+    border-radius: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    font-size: 20px;
+}
+.circle span {
+    margin-left: 15px;
+    /* line-height: 30px; */
+}
+.circle span p {
+    font-weight: bold;
+    font-size: 20px;
+}
+.circle span label {
+    font-size: 15px;
+}
+
+
+#part3 {
+    /* background-color: wheat; */
+    display: flex;
+    margin-top: 100px;
+}
+.square {
+    background-color: #efeef4;
+    /* background-color: yellow; */
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 0px 0px 15px -5px rgb(92, 92, 92); */
+    transition: 0.4s;
+}
+.square img {
+    transition: 0.3s;
+}
+.square div {
+    /* background-color: red; */
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 30px;
+}
+.square div p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.square div span {
+    /* background-color: blue; */
+    margin-top: 15px;
+    width: 10px;
+}
+.square div button {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 28, 28);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.square div button:hover {
+    color: red;
+}
+.square:hover img {
+    /* box-shadow: 0px 0px 15px -5px rgb(92, 92, 92); */
+    transform: scale(1.1,1.1);
+}
+
+
+#part4 {
+    /* background-color: #e7e7e728; */
+    background: linear-gradient(#e7e7e728,#e7e7e728,#e7e7e728, white);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#part4 .sp1 {
+    text-align: center;
+    padding-top: 100px;
+}
+#part4 .sp1 p {
+    font-size: 40px;
+    font-weight: bold;
+}
+/* #part4 .sp1 label {
+    
+} */
+.sp4-group {
+    /* background-color: violet; */
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sp4-group .sp4:hover 
+{
+    background-color: #efeef4;
+}
+.sp4-group .sp4 
+{
+    /* background-color: yellow; */
+    cursor: pointer;
+    margin: auto;
+    transition: 0.3s;
+    padding: 1px;
+    /* transition: 0.3s ease-in-out; */
+}
+.sp4-group .sp4 img {
+    height: 40vh;
+}
+.sp4-group .sp4 div {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.sp4-group .sp4 div span {
+    font-size: 14px;
+    opacity: 0.6;
+}
+.sp4-group .sp4 div p {
+    font-weight: bold;
+    font-size: 15px;
+}
+.sp4-group .sp4 div .stars {
+    display: flex;
+}
+.sp4-group .sp4 div .stars ion-icon {
+    font-size: 12px;
+}
+
+#part4 button {
+    background: rgb(255, 28, 28);
+    border: none;
+    transition: 0.3s;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 0px;
+    color: #fff;
+    margin-left: 40px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    opacity: 0.7;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+#part4 button i {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+#part4 button:hover {
+    opacity: 0.9;
+    /* color: black; */
+}
+
+#part5 {
+    /* padding: 10px; */
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+#part5 .contact {
+    text-align: left;
+    /* line-height: 30px; */
+    /* background-color: red; */
+    width: 70vw;
+}
+#part5 .contact p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#part5 img {
+    height: 50vh;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.contact-info {
+    /* background-color: rgb(194, 194, 194); */
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+}
+.contact-info form {
+    display: block;
+}
+.contact-info form div {
+    background-color: rgb(143, 206, 80);
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info form div label {
+    font-size: 14px;
+    margin: auto;
+    padding-left: 10px;
+    color: #fff;
+}
+.contact-info form div input[type="email"],
+.contact-info form div input[type="text"] {
+    width: 35vw;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 0px;
+    border: 1px solid rgba(73, 73, 73, 0.233);
+    /* text-transform: uppercase; */
+}
+.contact-info form input[type="submit"] {
+    background-color: rgb(143, 206, 80);
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 5px;
+    padding: 14px 16px;
+    width: 20%;
+    font-size: 16px;
+}
+.contact-info form textarea {
+    padding: 5px;
+    width: 90vh;
+    height: 15vh;
+    border: 1px solid rgba(73, 73, 73, 0.233);
+}
+.contact-info form input[type="submit"]:hover {
+    background-color: rgb(122, 175, 69);
+    color: #fff;
+    box-shadow: 0px 5px 5px rgb(212, 212, 212);
+}
