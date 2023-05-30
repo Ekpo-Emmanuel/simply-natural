@@ -1,1 +1,1 @@
-![CHEESE!](../images/home.png)
+![simply natural!](home.png)
